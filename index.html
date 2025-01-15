@@ -1,1 +1,47 @@
- 
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <button class="nav-btn" data-section="home">首页</button>
+            <button class="nav-btn" data-section="projects">项目</button>
+            <button class="nav-btn" data-section="contact">联系</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <h1>欢迎访问我的网站</h1>
+            <p>这里是一个充满创意的空间</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h1>我的项目</h1>
+            <div class="project-grid">
+                <div class="project-card">项目 1</div>
+                <div class="project-card">项目 2</div>
+                <div class="project-card">项目 3</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h1>联系方式</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="您的姓名">
+                <input type="email" placeholder="您的邮箱">
+                <textarea placeholder="留言内容"></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
